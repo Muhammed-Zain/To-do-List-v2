@@ -3,7 +3,7 @@
 
 html {
   background-color: #E4E9FD;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
   min-height: 100%;
   font-family: 'helvetica neue';
 }
@@ -15,18 +15,16 @@ h1 {
 }
 
 .box {
-  width: 50%;
+  max-width: 400px;
   margin: 50px auto;
   background: white;
-  border-radius: 30px;
+  border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-  background-color: #1282A2;
+  background-color: #A683E3;
   text-align: center;
-  max-width: 400px;
-  border-radius: 20px;
 }
 
 .item {
@@ -44,7 +42,7 @@ h1 {
 input:checked+p {
   text-decoration: line-through;
   text-decoration-thickness: 3px;
-  text-decoration-color: #9A7AA0;
+  text-decoration-color: #A683E3;
   color: #00204a;
 }
 
@@ -73,11 +71,10 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  margin-right: 3%;
+  background-color: #A683E3;
   color: #fff;
-  background-color: #1282A2;
   font-size: 30px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
   border-width: 0;
 }
 
@@ -96,7 +93,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A57548;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
 }
 
 ::placeholder {
@@ -115,15 +112,5 @@ footer {
 .bottom-text {
   font-family: 'Product Sans', sans-serif;
   font-size: 1.2rem;
-  color: #FEFCFB;
-}
-
-.items {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-input[placeholder="Enter a new task.."] {
-  margin-right: auto;
+  color: #6609cf;
 }
