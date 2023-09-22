@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>To Do List</title>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        const footerDetails = `<footer class="bottom-text">© ${new Date().getFullYear()} Designed By Zain</footer>`;
+        document.getElementById("footer").innerHTML = footerDetails;
+      });
+    </script>
   </head>
   <body>
     <div class="box" id="heading">
@@ -34,9 +47,17 @@
           name="newItem"
           autocomplete="off"
         />
-        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+        <button
+          class="button-74"
+          role="button"
+          type="submit"
+          name="list"
+          value="<%= listTitle %>"
+        >
+          <span>+</span>
+        </button>
       </form>
     </div>
-    <footer class="bottom-text">© 2022 Designed By Zain</footer>
+    <div id="footer"></div>
   </body>
 </html>
