@@ -4,7 +4,9 @@
   "description": "This is a to do list",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "build": "node app.js"
   },
   "author": "Zain",
   "license": "ISC",
@@ -12,10 +14,10 @@
     "node": "18.6.0"
   },
   "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "lodash": "^4.17.21",
-    "mongoose": "^6.5.0",
-    "nodemon": "^2.0.19"
+    "mongoose": "^7.5.2",
+    "nodemon": "^3.0.1"
   }
 }
